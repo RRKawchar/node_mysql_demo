@@ -22,12 +22,6 @@ const PORT=process.env.PORT||8000;
 app.use("/api/v2/student",require("./routes/studentRoutes"));
 
 
-app.get('/test',(req,res) => {
-  res.status(200).send({
-    success:true,
-    message:"This is my first nodejs practice app",
-  });
-});
 
 ///conditionaly listen
 mysqlPool.query('SELECT 1').then(()=>{

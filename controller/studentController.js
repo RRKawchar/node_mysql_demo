@@ -73,7 +73,18 @@ const createStudent = async (req, res) => {
       });
     }
   };
+
+
+ const getTestMethod=(req,res)=>{
+      res.status(200).send({
+        success:true,
+        message:"This is my first nodejs practice app",
+      });
+   
+  }
+
+ 
   
 
 
-module.exports={getStudent,createStudent};
+module.exports={getStudent,createStudent,getTestMethod};
